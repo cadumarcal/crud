@@ -14,7 +14,7 @@
 
           if($result){
                // echo "Banco de dados conectado";
-               header('location:display.php');
+               header('Location: display.php');
           } else{
                die(mysqli_error($con));
           }
@@ -30,11 +30,11 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
      <title>Cadastro</title>
 </head>
-
+<img src="./img/world-skills.png" height="150px">
 <body>
      <div class="container my-5">
           <form method="post">
-               <h2 style="font-family: 'Arial';">
+               <h2>
                     Registre os dados do competidor:
                </h2>
                <div class="form-group">
@@ -53,9 +53,26 @@
                     <label>Data de Nascimento</label>
                     <input type="date" class="form-control" placeholder="Insira sua data de nascimento" name="data" autocomplete="off">
                </div>
-               <button type="submit" class="btn btn-primary" name="enviar">ENVIAR</button>
+               <button type="submit" class="btn btn-primary" name="enviar">REGISTRAR</button>
           </form>
      </div>
-</body>
+     <style>
+           @import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400&display=swap%27%29%3B');
+           h2 {
+               font-family: 'Poppins';
+               font-size: 30px;
+               font-weight: bold;
+               text-align: center;
+               margin-top: 5%;
+          }
+           img {
+               height:150px;
+               margin-top: 2%;
+               margin-left: 4%;
+          }
+     </style>
+     <script>
 
+     </script>
+</body>
 </html>
